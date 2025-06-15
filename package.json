@@ -1,6 +1,7 @@
 {
   "name": "career-st",
   "private": true,
+  "homepage": "https://melpnz.github.io/career-st",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
