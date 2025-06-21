@@ -79,6 +79,11 @@ export default {
 
 ---
 
+## 👀 Превью всех шрифтов
+
+<div style="font-family: 'PT Sans', sans-serif; margin: 24px 0 12px 0; padding: 24px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;"><h2 style="margin-bottom: 24px; color: #464646; font-size: 20px;">Превью заголовков</h2><div style="margin-bottom: 24px;"><span style="font-size: 28px; font-weight: 700; color: #464646;">Display XL — Главный заголовок страницы</span></div><div style="margin-bottom: 24px;"><span style="font-size: 24px; font-weight: 700; color: #464646;">Display L — Основные разделы</span></div><div style="margin-bottom: 24px;"><span style="font-size: 21px; font-weight: 700; color: #464646;">Display M — Подразделы</span></div><div style="margin-bottom: 24px;"><span style="font-size: 18px; font-weight: 700; color: #464646;">Display S — Мелкие заголовки</span></div><div style="margin-bottom: 24px;"><span style="font-size: 17px; font-weight: 700; color: #464646;">Title — Подзаголовки</span></div></div><div style="font-family: 'PT Sans', sans-serif; margin: 12px 0 12px 0; padding: 24px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;"><h2 style="margin-bottom: 24px; color: #464646; font-size: 20px;">Превью body-текстов</h2><div style="margin-bottom: 24px;"><span style="font-size: 16px; font-weight: 400; color: #464646;">Body L — Основной текст (Regular)</span><br><span style="font-size: 16px; font-weight: 700; color: #464646;">Body L — Акцентный основной текст (Bold)</span></div><div style="margin-bottom: 24px;"><span style="font-size: 14px; font-weight: 400; color: #464646;">Body M — Вспомогательный текст (Regular)</span><br><span style="font-size: 14px; font-weight: 700; color: #464646;">Body M — Акцентный вспомогательный текст (Bold)</span></div><div style="margin-bottom: 24px;"><span style="font-size: 12px; font-weight: 400; color: #464646;">Body S — Мелкий текст (Regular)</span><br><span style="font-size: 12px; font-weight: 700; color: #464646;">Body S — Акцентный мелкий текст (Bold)</span></div></div><div style="font-family: 'PT Sans', sans-serif; margin: 12px 0 24px 0; padding: 24px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;"><h2 style="margin-bottom: 24px; color: #464646; font-size: 20px;">Цвета</h2><div style="margin-bottom: 12px;"><span style="font-size: 16px; color: #464646;">Black (#464646) — Основной цвет текста</span></div><div style="margin-bottom: 12px;"><span style="font-size: 16px; color: #999999;">Gray (#999999) — Вторичный цвет текста</span></div><div><span style="font-size: 16px; color: #1463d9;">Link (#1463d9) — Цвет ссылок</span></div></div>
+---
+
 ## 📋 Размеры шрифтов и HTML теги
 
 | Размер | Класс | Размер | HTML тег | Доступные веса | Назначение |
@@ -154,18 +159,6 @@ export default {
 
 ---
 
-## 🔧 Props
-
-| Prop | Тип | По умолчанию | Описание |
-|------|-----|--------------|----------|
-| \`variant\` | String | \`'body-l'\` | Размер шрифта (display-xl, display-l, display-m, display-s, title, body-l, body-m, body-s) |
-| \`weight\` | String | \`'regular'\` | Вес шрифта (regular, bold) |
-| \`color\` | String | \`'black'\` | Цвет текста (black, gray, link) |
-| \`text\` | String | \`''\` | Текст для отображения (альтернатива slot) |
-| \`customStyle\` | Object | \`{}\` | Дополнительные CSS стили |
-
----
-
 ## 🎯 Лучшие практики
 
 1. **Используйте правильную иерархию** - Display XL для главных заголовков, Display L для разделов
@@ -178,7 +171,6 @@ export default {
   }
 };
 
-// Интерактивный конструктор
 export const Constructor = {
   args: {
     variant: 'body-l',
@@ -241,9 +233,6 @@ export const Constructor = {
 
 ### 💡 Советы:
 - Заголовки автоматически используют bold вес
-- Body тексты поддерживают оба веса
-- HTML теги выбираются автоматически
-- Используйте Constructor для быстрого прототипирования
         `
       }
     }
